@@ -37,7 +37,7 @@ const uint64_t CRYPTONOTE_BLOCK_FUTURE_TIME_LIMIT            = 270; // DIFFICULT
 const size_t   BLOCKCHAIN_TIMESTAMP_CHECK_WINDOW             = 60;
 const size_t   BLOCKCHAIN_TIMESTAMP_CHECK_WINDOW_V4          = 11;
 
-cc// MONEY_SUPPLY - total number coins to be generated
+// MONEY_SUPPLY - total number coins to be generated
 const uint64_t MONEY_SUPPLY									= UINT64_C(10000000000000000); // 100M
 const uint64_t FINAL_SUBSIDY_PER_MINUTE						= UINT64_C(20000000); // 0.20 LUK
 const unsigned EMISSION_SPEED_FACTOR                        = 19;

@@ -1,0 +1,58 @@
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/j_m_t0792/example/jmtCoin/cryptonote/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_665a6/fast"
+/usr/bin/make -f CMakeFiles/cmTC_665a6.dir/build.make CMakeFiles/cmTC_665a6.dir/build
+make[1]: Entering directory '/home/j_m_t0792/example/jmtCoin/cryptonote/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_665a6.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -std=c11  -Wall -Wextra -Wpointer-arith -Wundef -Wvla -Wwrite-strings -Wno-error=extra   -Wno-error=unused-function -Wno-error=deprecated-declarations -Wno-error=sign-compare -Wno-error=strict-aliasing -Wno-error=type-limits -Wno-unused-parameter -Wno-error=unused-variable -Wno-error=undef -Wno-error=uninitialized -Wno-error=unused-result -Wlogical-op -Wno-error=maybe-uninitialized -Wno-error=clobbered -Wno-error=unused-but-set-variable -Wno-error=odr -Waggregate-return -Wnested-externs -Wold-style-definition -Wstrict-prototypes -march=native -maes    -o CMakeFiles/cmTC_665a6.dir/CheckSymbolExists.c.o   -c /home/j_m_t0792/example/jmtCoin/cryptonote/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_665a6
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_665a6.dir/link.txt --verbose=1
+/usr/bin/cc   -std=c11  -Wall -Wextra -Wpointer-arith -Wundef -Wvla -Wwrite-strings -Wno-error=extra   -Wno-error=unused-function -Wno-error=deprecated-declarations -Wno-error=sign-compare -Wno-error=strict-aliasing -Wno-error=type-limits -Wno-unused-parameter -Wno-error=unused-variable -Wno-error=undef -Wno-error=uninitialized -Wno-error=unused-result -Wlogical-op -Wno-error=maybe-uninitialized -Wno-error=clobbered -Wno-error=unused-but-set-variable -Wno-error=odr -Waggregate-return -Wnested-externs -Wold-style-definition -Wstrict-prototypes -march=native -maes     CMakeFiles/cmTC_665a6.dir/CheckSymbolExists.c.o  -o cmTC_665a6 -rdynamic 
+CMakeFiles/cmTC_665a6.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text+0x16): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_665a6.dir/build.make:97: recipe for target 'cmTC_665a6' failed
+make[1]: *** [cmTC_665a6] Error 1
+make[1]: Leaving directory '/home/j_m_t0792/example/jmtCoin/cryptonote/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_665a6/fast' failed
+make: *** [cmTC_665a6/fast] Error 2
+
+File /home/j_m_t0792/example/jmtCoin/cryptonote/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/j_m_t0792/example/jmtCoin/cryptonote/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_4b66e/fast"
+/usr/bin/make -f CMakeFiles/cmTC_4b66e.dir/build.make CMakeFiles/cmTC_4b66e.dir/build
+make[1]: Entering directory '/home/j_m_t0792/example/jmtCoin/cryptonote/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_4b66e.dir/CheckFunctionExists.c.o
+/usr/bin/cc    -std=c11  -Wall -Wextra -Wpointer-arith -Wundef -Wvla -Wwrite-strings -Wno-error=extra   -Wno-error=unused-function -Wno-error=deprecated-declarations -Wno-error=sign-compare -Wno-error=strict-aliasing -Wno-error=type-limits -Wno-unused-parameter -Wno-error=unused-variable -Wno-error=undef -Wno-error=uninitialized -Wno-error=unused-result -Wlogical-op -Wno-error=maybe-uninitialized -Wno-error=clobbered -Wno-error=unused-but-set-variable -Wno-error=odr -Waggregate-return -Wnested-externs -Wold-style-definition -Wstrict-prototypes -march=native -maes -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_4b66e.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.5/Modules/CheckFunctionExists.c
+/usr/share/cmake-3.5/Modules/CheckFunctionExists.c:6:1: warning: function declaration isn’t a prototype [-Wstrict-prototypes]
+ char CHECK_FUNCTION_EXISTS();
+ ^
+Linking C executable cmTC_4b66e
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4b66e.dir/link.txt --verbose=1
+/usr/bin/cc   -std=c11  -Wall -Wextra -Wpointer-arith -Wundef -Wvla -Wwrite-strings -Wno-error=extra   -Wno-error=unused-function -Wno-error=deprecated-declarations -Wno-error=sign-compare -Wno-error=strict-aliasing -Wno-error=type-limits -Wno-unused-parameter -Wno-error=unused-variable -Wno-error=undef -Wno-error=uninitialized -Wno-error=unused-result -Wlogical-op -Wno-error=maybe-uninitialized -Wno-error=clobbered -Wno-error=unused-but-set-variable -Wno-error=odr -Waggregate-return -Wnested-externs -Wold-style-definition -Wstrict-prototypes -march=native -maes -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_4b66e.dir/CheckFunctionExists.c.o  -o cmTC_4b66e -rdynamic -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_4b66e.dir/build.make:97: recipe for target 'cmTC_4b66e' failed
+make[1]: *** [cmTC_4b66e] Error 1
+make[1]: Leaving directory '/home/j_m_t0792/example/jmtCoin/cryptonote/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_4b66e/fast' failed
+make: *** [cmTC_4b66e/fast] Error 2
+
+
